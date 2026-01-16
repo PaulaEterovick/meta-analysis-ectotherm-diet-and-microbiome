@@ -1,6 +1,6 @@
 # FLORA OTU-Metadata Correlation Analysis
-# Script to analyze correlations between OTUs and metadata variables
-# with taxonomic annotation
+# Script to analyze correlations between OTUs and metadata variables with taxonomic annotation
+# The data files for this script will be made available under request due to their size beyond the limit for GitHub repositories
 
 library("readxl")
 library("dplyr")      
@@ -19,7 +19,6 @@ library("magrittr")  # For %>% operator in case it's missing
 data_FLORA <- read_excel("/filepath/merged_phyloseq_complete.xlsx", sheet = "dataFLORA")
 otu_mat<- read_excel("/filepath/merged_phyloseq_complete.xlsx", sheet = "otu_counts")
 tax_mat<- read_excel("/filepath/merged_phyloseq_complete.xlsx", sheet = "taxonomy")
-
 
 # Assume first column of otu_counts contains OTU IDs
 otu_ids <- otu_mat[[1]]
