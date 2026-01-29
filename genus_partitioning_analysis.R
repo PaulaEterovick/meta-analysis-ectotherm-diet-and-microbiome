@@ -12,7 +12,7 @@ library(ggplot2)
 
 # Load the data
 
-data <- read_excel("/Users/paulaeterovick/Dokumente/ProjektDFG2024/metanalysis/manuscript_meta/partykit_alldata.xlsx", sheet = "genera")
+data <- read_excel("/filepath/partykit_alldata.xlsx", sheet = "genera")
 
 # Display basic information about the dataset
 cat("Dataset dimensions:", dim(data), "\n")
