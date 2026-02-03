@@ -7,7 +7,7 @@ library(iNEXT)
 library(picante)
 library(phangorn)
 
-setwd("/Users/paulaeterovick/Dokumente/ProjektDFG2024/metanalysis/Hill/")
+setwd("/filepath/Hill/")
 
 # ========================================
 # READ DATA
@@ -16,17 +16,17 @@ setwd("/Users/paulaeterovick/Dokumente/ProjektDFG2024/metanalysis/Hill/")
 cat("Reading data...\n")
 
 # Read OTU table
-otu_table <- read.table("/Users/paulaeterovick/Dokumente/ProjektDFG2024/metanalysis/Hill/otu_table.txt", 
+otu_table <- read.table("/filepath/otu_table.txt", 
                         header=TRUE, row.names=1)
 
 cat(paste("OTU table:", nrow(otu_table), "OTUs x", ncol(otu_table), "samples\n\n"))
 
 # Read phylogenetic tree
 cat("Reading phylogenetic tree...\n")
-if (file.exists("/Users/paulaeterovick/silva_phylogeny/phylogenetic_tree.newick")) {
-  meta.tree <- read.tree("/Users/paulaeterovick/silva_phylogeny/phylogenetic_tree.newick")
+if (file.exists("/filepath/phylogenetic_tree.newick")) {
+  meta.tree <- read.tree("/filepath/phylogenetic_tree.newick")
 } else {
-  meta.tree <- read.tree("/Users/paulaeterovick/silva_phylogeny/phylogenetic_tree.tree")
+  meta.tree <- read.tree("/filepath/phylogenetic_tree.tree")
 }
 
 cat(paste("Tree loaded:", length(meta.tree$tip.label), "tips\n\n"))
