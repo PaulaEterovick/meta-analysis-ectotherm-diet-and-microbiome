@@ -36,8 +36,8 @@ def merge_taxonomy_for_otu(otu_rows):
 
 def main():
     # File paths
-    input_file = '/Volumes/TOSHIBA EXT/metanalysis/clphyloseq_silva/phyloseqV3_V4_444.xlsx'
-    output_file = '/Volumes/TOSHIBA EXT/metanalysis/clphyloseq_silva/phyloseqV3_V4_444_merged_complete.xlsx'
+    input_file = '/pathway/phyloseqV3_V4_444.xlsx'
+    output_file = '/pathway/phyloseqV3_V4_444_merged_complete.xlsx'
     
     # Check if input file exists
     if not os.path.exists(input_file):
