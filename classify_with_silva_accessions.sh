@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # QIIME2 Classification with SILVA Accession Numbers
-# This script modifies your original classification command to output both taxonomy classifications AND the specific SILVA accession numbers that each sequence was matched against.
+# Output: both taxonomy classifications AND the specific SILVA accession numbers that each sequence was matched against.
 
 echo "Starting QIIME2 classification with SILVA accession tracking..."
 
