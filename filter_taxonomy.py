@@ -10,9 +10,9 @@ import os
 
 def main():
     # File paths
-    excel_file = '/Volumes/TOSHIBA EXT/metanalysis/clphyloseq_files/sample_countsV3_V4_444.xlsx'
-    taxonomy_file = '/Volumes/TOSHIBA EXT/metanalysis/clphyloseq_files/silva_taxonomy_mappingV3_V4_444.tsv'
-    output_file = '/Volumes/TOSHIBA EXT/metanalysis/clphyloseq_files/silva_taxonomy_mappingV3_V4_444_filtered.tsv'
+    excel_file = '/pathway/sample_countsV3_V4_444.xlsx'
+    taxonomy_file = '/pathway/silva_taxonomy_mappingV3_V4_444.tsv'
+    output_file = '/pathway/silva_taxonomy_mappingV3_V4_444_filtered.tsv'
     
     # Check if files exist
     if not os.path.exists(excel_file):
