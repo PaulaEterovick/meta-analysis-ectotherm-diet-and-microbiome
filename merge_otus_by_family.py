@@ -11,7 +11,7 @@ import shutil
 
 def main():
     # File path
-    excel_file = "/Users/paulaeterovick/Dokumente/ProjektDFG2024/metanalysis/phyloseq_merged/genus_level_correlated.xlsx"
+    excel_file = "/filepath/genus_level_correlated.xlsx"
     
     # Check if file exists
     if not os.path.exists(excel_file):
